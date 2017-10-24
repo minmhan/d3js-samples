@@ -1,14 +1,17 @@
+<!DOCTYPE html>
 <html>
 <head>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
-        <svg></svg>
+	<h3>D3js</h3>
+	<svg width="820" height="820"></svg>
 	
-	<script src="./scripts/barchart_01.js" />
+	<script src="./scripts/scatterplot_01.js"></script>
 	<script>
+		console.log("starting");
 		d3.json("./data/tweets.json", function(data){
-    		dataViz(data.tweets);
+			dataViz(data.tweets);
 		});	
 	</script>
 </body>
